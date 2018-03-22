@@ -1,0 +1,21 @@
+{
+  "8ball": "Ask the magic 8 ball a question! Usage: `=>8ball Do pigs fly?`",
+  "action": "action makes the bot mention you with whatever you've typed. Usage: `=>action goes to bed`",
+  "avatar": "avatar gives you a link to your avatar, or the first person you mention in your message. Usage: `=>avatar <mentioned user>`",
+  "cat": "cat sends a random cat picture! Usage: `=>cat`",
+  "draw": "draw draws a random card, from 2-10, Ace, King, Queen, Jack, and all of the suits. Usage: `=>draw`",
+  "flip": "flip flips a simple coin with equal chances of getting heads or tails! Usage: `=>flip`",
+  "frombinary": "frombinary translates binary to normal ASCII text. Make sure you don't have any spaces in your binary. Usage: `=>frombinary (binary to translate)`",
+  "nick": "nick gives you a nickname. This is useful for mobile users! Usage: `=>nick (nickname)`",
+  "roll": "roll lets you roll a certain amount of dice with any number of faces! Usage: `=>roll <num of dice>d<amount of faces for each die, only one number>`",
+  "rot": "rot lets you rotate all of the characters like with .rot13, however you specify how many times they are rotated. Usage: `=>rot (amount of times to rotate each letter, must be a number) (text to rotate)`",
+  "rot13": "rot13 lets you 'rotate' all of the characters in your message 13 times, for instance 'abc' would become 'nop'. Usage: `=>rot13 (what you want to rotate)`",
+  "shoot": "shoot lets you shoot someone! Usage: `=>shoot (name of someone/something, use '_' for spaces!) <any weapon you'd want, use '_' for spaces again!>`",
+  "stab": "stab lets you stab someone or something! Usage: `=>stab (name of someone/something, use '_' for spaces!) <any weapon you'd want, use '_' for spaces again!>`",
+  "t": "t is a command to make me send a tag, which is created with `=>tc`! Usage: `=>t (tag)`",
+  "tc": "tc lets you make a tag, which can contain any text you want. This, sadly, does not support images. You can use image links though! Usage: `=>tc (tag name, no spaces! this can contain underscores though.) (tag content, everything after the name is considered tag content.)`",
+  "tobinary": "tobinary Translates whatever you want to binary. Usage: `=>tobinary (something to translate. Do not leave this blank!)`",
+  "ud": "ud searches up any term in the urban dictionary. Usage: `=>ud (term to search up)`",
+  "yt": "yt searches for a video on youtube. Usage: `=>yt (video to search)`",
+  "slots": "It's a slot machine, what else did you expect? Usage: `=>slots`"
+}
