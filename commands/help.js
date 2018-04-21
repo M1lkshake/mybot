@@ -5,10 +5,11 @@ exports.run = (client, message, args) => {
   let helptags = JSON.parse(fs.readFileSync("./lib/commands.json", "utf8"));
   
   if(!args[0]) {
+    var noisemoji = client.emojis.find("name", "noise");
     var embed = new Discord.RichEmbed()
-    .setTitle("Help")
+    .setTitle(`${noisemoji} Help ${noisemoji}`)
     .setColor(0x002222)
-    .setDescription("Need help with anything? Message @Dave Strider#0502 for help, or find the help for a command using `=help <command name>`! You can also get a list of commands using `=help list`.");
+    .setDescription("Need help with anything? Message @Noisemaster#0502 for help, or find the help for a command using `=help <command name>`! You can also get a list of commands using `=help list`.");
     
     message.channel.send({embed});
   } else if(args[0] === "list") {

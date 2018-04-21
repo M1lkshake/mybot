@@ -1,6 +1,6 @@
 exports.run = (client, message, args) => {
 	const Discord = require("discord.js");
-	var emojipool = [":poop:", ":gem:", ":moneybag:"];
+	var emojipool = [":clubs:", ":diamonds:", ":hearts:", ":spades:"];
 	var random1 = emojipool[(Math.floor(Math.random() * emojipool.length))];
 	var random2 = emojipool[(Math.floor(Math.random() * emojipool.length))];
 	var random3 = emojipool[(Math.floor(Math.random() * emojipool.length))];

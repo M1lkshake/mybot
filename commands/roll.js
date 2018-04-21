@@ -5,6 +5,13 @@ exports.run = (client, message, args) => {
     var d = [];
     var da = 0;
     var i;
+    const d66 = client.emojis.find("name", "d66");
+    const d65 = client.emojis.find("name", "d65");
+    const d64 = client.emojis.find("name", "d64");
+    const d63 = client.emojis.find("name", "d63");
+    const d62 = client.emojis.find("name", "d62");
+    const d61 = client.emojis.find("name", "d61");
+  
   
     if(amount == 0) { message.channel.send("You cannot roll 0 dice!"); return; };
     if(sides == 0 || sides == 1) { message.channel.send("You have to have more than 1 face per die!"); return; };
@@ -24,7 +31,10 @@ exports.run = (client, message, args) => {
     var result = d.join(", ");
     if(amount != 1) {
       message.reply(`You rolled a ${da}, or in more detail (This is every roll!): ${result}`);
-    } else if(amount == 1) {  
-      message.reply(`You rolled ${da}.`);
+    } else if(amount == 1) {
+        if(sides == 6) {
+           
+        }
+        message.reply(`You rolled ${da}.`);
     }
 }

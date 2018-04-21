@@ -27,17 +27,8 @@ user.on("message", message => {
   const command = args.shift().toLowerCase();
 
   try {
-    var msg = message.content.toLowerCase();
-    if(responses[msg]){
-      var response = responses[msg];
-      console.log("response");
-      message.channel.send(response);
-      console.log("sent response");
-      return;
-    } else {
       let commandFile = require(`./commands/${command}.js`);
       commandFile.run(user, message, args, config);
-    }
   } catch (err) {
     console.log(err);
   }
