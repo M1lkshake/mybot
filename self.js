@@ -5,7 +5,7 @@ const log = require('./lib/plugins/logging.js')
 
 const config = require("./config/config.json");
 const responses = require("./config/responses.json");
-user.login("NDIzMjYzMjA0NjA1NTU4Nzg1.DYnydw.J8IWEYJhMfG-tHKiQOvzcyhob-k");
+user.login("NDM3NDE5NDE4NzEzMTk0NTI2.Db1yHQ.6RtHVkOM1b81kXk_jRVphU2XM_w");
 
 user.on("warn", log.warn);
 user.on("error", log.err);

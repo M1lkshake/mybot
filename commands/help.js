@@ -5,17 +5,17 @@ exports.run = (client, message, args) => {
   let helptags = JSON.parse(fs.readFileSync("./lib/commands.json", "utf8"));
   
   if(!args[0]) {
-    var noisemoji = client.emojis.find("name", "noise");
+    var artemoji = client.emojis.find("name", "astar");
     var embed = new Discord.RichEmbed()
-    .setTitle(`${noisemoji} Help ${noisemoji}`)
-    .setColor(0x002222)
-    .setDescription("Need help with anything? Message @Noisemaster#0502 for help, or find the help for a command using `=help <command name>`! You can also get a list of commands using `=help list`.");
+    .setTitle(`${artemoji} Help ${artemoji}`)
+    .setColor(0x5a38d1)
+    .setDescription("Need help with anything? Message @Artemis#0502 for help, or find the help for a command using `=help <command name>`! You can also get a list of commands using `=help list`.");
     
     message.channel.send({embed});
   } else if(args[0] === "list") {
     var embed = new Discord.RichEmbed()
     .setTitle("Available Commands")
-    .setColor(0x002222)
+    .setColor(0x5a38d1)
     .setDescription(`=8ball, =action, =avatar, =cat, =draw, =flip,\n=frombinary, =tobinary, =help, =nick, =paste, =reload,\n=roll, =rot, =rot13, =say, =shoot, =slots, =stab, =t,\n=tc, =ud, and =yt.`);
     message.channel.send({embed});
 
@@ -23,7 +23,7 @@ exports.run = (client, message, args) => {
     if(!helptags[args[0]]) message.reply("Command not found!"); return;
     var embed = new Discord.RichEmbed()
     .setTitle(args[0])
-    .setColor(0x002222)
+    .setColor(0x5a38d1)
     .setDescription(helptags[args[0]]);
     
     message.channel.send({embed});

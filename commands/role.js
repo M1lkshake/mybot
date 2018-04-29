@@ -2,7 +2,7 @@ exports.run = (client, message, args) => {
 	const Discord = require('discord.js');
 	const argpush = args.shift();
 	const role = message.guild.roles.find("name", args.join(' '));
-	var dontadd = ["Owner", "Co-Owner", "Tatsumaki", "Family", "admin", "mods", "Administrators", "Moderators", "Respected Members", "Bots", "Starboard", "NoiseBot", "Noisemaster's Machines"];
+	var dontadd = ["Owner", "admin", "mods", "Administrators", "Moderators", "Starboard", "ArtemisBot", "Bots"];
 	if(!role){
 		message.reply("That role does not exist!");
 	} else if(!dontadd.includes(role.name)){

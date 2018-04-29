@@ -12,7 +12,7 @@ exports.run = (client, message, args) => {
       message.reply(`${word} is undefined!`);
       return;
     }
-    message.reply(`Error! Please ping @Dave Strider as soon as he is online. Error: ${error}`);
+    message.reply(`Error! Please ping @Artemis#0502 as soon as he is online. Error: ${error}`);
     logger.err(error.message);
   } else { 
     var embed = new Discord.RichEmbed()
